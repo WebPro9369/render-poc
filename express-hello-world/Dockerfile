@@ -6,6 +6,6 @@ COPY express-hello-world/package.json /home/app/
 COPY express-hello-world/package-lock.json /home/app/
 RUN npm install
 
-COPY . /home/app
+COPY ./express-hello-world/* /home/app
 
 CMD ["npm", "run", "start"]
